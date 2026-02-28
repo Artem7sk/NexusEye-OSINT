@@ -50,19 +50,21 @@ Your contribution helps keep the project alive and allows for continuous improve
 
 ### Ways to support:
 
-* **🚀 Boosty.to:** For Russian-speaking audience and direct card payments.
-    [Support on Boosty](https://boosty.to/artem7sk)
+## ☕ Support the Project
 
-* **🔔 DonationAlerts:** Send a direct donation with a message!
-    [Donate via DonationAlerts](https://www.donationalerts.com/r/moydomsnylia)
+If you find **NexusEye OSINT** useful, consider supporting its development. Your contributions help cover server costs (MARVEL) and API fees, ensuring the bot stays online 24/7.
 
-* **💰 Cryptocurrency:** For secure and anonymous support.
-    * **USDT (TRC20):** `TAfYV3aPL5T1XLS2By719UCCWKiuuAENGi`
+### 💳 Standard Donations
+* **Boosty:** [Support on Boosty](https://boosty.to/artem7sk) (Cards, PayPal, CIS/Global)
+* **DonationAlerts:** [Send a Message & Donation](https://www.donationalerts.com/r/moydomsnylia)
+
+### 💰 Cryptocurrency
+You can send support directly to these wallets:
+
+* **USDT (TRC20):** `TAfYV3aPL5T1XLS2By719UCCWKiuuAENGi`
 * **Bitcoin (BTC):** `15VyxQz7zKDTnDsJCZJAjX1eA4LHD5a14j`
 * **Ethereum / USDT (ERC20):** `0x027a11eb651bf737e93e0828f74203629efe386a`
 * **BNB (BEP20):** `0x027a11eb651bf737e93e0828f74203629efe386a`
-    * *Need another crypto? Contact me: [Telegram @Artem7sk_support](https://t.me/@moydomsnylia1)*
-    * 
-Профессиональное описание: На английском, с четким выделением технологий.
 
-Портфолио: Теперь это не "учебный проект", а продукт, который можно показать заказчику или работодателю.
+---
+*For private inquiries or custom API integrations, contact me via [Telegram](https://t.me/@moydomsnylia1)*
