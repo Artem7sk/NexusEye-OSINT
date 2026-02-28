@@ -11,7 +11,15 @@ TOKEN = os.getenv("BOT_TOKEN")
 
 async def main():
     # Настраиваем логирование, чтобы видеть ошибки в консоли
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("nexus_eye.log"), # Сохраняет всё в файл
+        logging.StreamHandler()              # Выводит в консоль
+    ]
+)
+    
     
     if not TOKEN:
         exit("Error: BOT_TOKEN not found in .env file")
