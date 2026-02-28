@@ -20,3 +20,39 @@
    ```bash
    git clone [https://github.com/YOUR_USERNAME/NexusEye-OSINT.git](https://github.com/YOUR_USERNAME/NexusEye-OSINT.git)
    cd NexusEye-OSINT
+Set up environment:
+Create a .env file and add your Telegram token:
+
+Фрагмент кода
+
+BOT_TOKEN=your_bot_father_token
+Install dependencies:
+
+Bash
+
+pip install -r requirements.txt
+Run the bot:
+
+Bash
+
+python main.py
+📈 Roadmap
+[ ] Integration with Email Breach databases.
+
+[ ] Phone number lookup module.
+
+[ ] PDF report generation for search results.
+
+[ ] Premium subscription tier via GitHub Sponsors.
+
+🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to make NexusEye even more powerful.
+
+💰 Support & Customization
+Need a custom OSINT solution or want to support this project?
+
+Contact: [Your Telegram Username]
+
+Support: Click the Sponsor button on GitHub!
+
+Disclaimer: This tool is for educational and ethical OSINT research purposes only.
