@@ -1,58 +1,55 @@
 # 👁 NexusEye OSINT Bot
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Aiogram](https://img.shields.io/badge/Library-Aiogram_3.x-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+A high-performance, asynchronous Telegram bot designed for comprehensive OSINT (Open Source Intelligence) investigations. This tool integrates nickname scanning, email leak detection, phone number analysis, and reverse image searching into a single, user-friendly interface.
 
-**NexusEye** is a high-performance, asynchronous OSINT (Open Source Intelligence) tool built as a Telegram bot. It allows users to track digital footprints across 500+ social networks and platforms using just a nickname.
 
----
 
-## 🚀 Features
-- **Fast Search:** Asynchronous engine checks multiple platforms simultaneously.
-- **Nickname Tracking:** Scans Instagram, TikTok, GitHub, Twitter (X), Steam, and more.
-- **Clean Architecture:** Separated bot logic and OSINT engine for easy scaling.
-- **Cloud Ready:** Optimized for 24/7 deployment on VPS (systemd support).
+## 🚀 Key Features
 
-## 🛠 Installation
+* **🔍 Nickname Search:** Scans 25+ major social media platforms and forums (Instagram, TikTok, GitHub, VK, etc.) to find digital footprints.
+* **📧 Email Leak Check:** Integrates with leak database APIs to verify if a specific email has been compromised in known data breaches.
+* **📱 Phone Lookup:** Instant analysis of international phone numbers, providing region, carrier details, and direct links to WhatsApp/Telegram profiles.
+* **🖼 Reverse Image Search:** Generates deep links for facial and object recognition through Google Lens, Yandex Images, and Bing Visual Search.
+* **📄 PDF Reports:** Automatically generates and delivers professional PDF dossiers containing all investigation results.
+* **💳 Monetization Ready:** Built-in support for digital goods and services using **Telegram Stars (XTR)**.
+
+## 🛠 Tech Stack
+
+* **Language:** Python 3.12+
+* **Framework:** `aiogram 3.x` (Fully Asynchronous)
+* **Database:** `SQLite3` (User profiles, search history, and premium status)
+* **Core Libraries:**
+    * `aiohttp` — For high-speed concurrent network requests.
+    * `fpdf2` — For dynamic PDF report generation.
+    * `phonenumbers` — For international phone metadata parsing.
+
+## 📦 Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/NexusEye-OSINT.git](https://github.com/YOUR_USERNAME/NexusEye-OSINT.git)
-   cd NexusEye-OSINT
-Set up environment:
-Create a .env file and add your Telegram token:
-
-Фрагмент кода
-
-BOT_TOKEN=your_bot_father_token
-Install dependencies:
+   git clone [https://github.com/your-username/NexusEye-OSINT.git](https://github.com/your-username/NexusEye-OSINT.git)
+Set up a virtual environment and install dependencies:
 
 Bash
 
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-Run the bot:
+Configure your Bot Token in main.py.
+
+Launch the system:
 
 Bash
 
 python main.py
-📈 Roadmap
-[ ] Integration with Email Breach databases.
+📊 Admin Dashboard
+The bot includes a built-in monitoring system for the owner to track:
 
-[ ] Phone number lookup module.
+Total active user base.
 
-[ ] PDF report generation for search results.
+Real-time search request volume.
 
-[ ] Premium subscription tier via GitHub Sponsors.
+Premium sales statistics and revenue in Telegram Stars.
 
-🤝 Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests to make NexusEye even more powerful.
-
-💰 Support & Customization
-Need a custom OSINT solution or want to support this project?
-
-Contact: [Your Telegram Username]
-
-Support: Click the Sponsor button on GitHub!
-
-Disclaimer: This tool is for educational and ethical OSINT research purposes only.
+⚖️ Legal Disclaimer
+This tool is developed for educational and professional OSINT research purposes only. The author is not responsible for any misuse of the information retrieved by this bot.
