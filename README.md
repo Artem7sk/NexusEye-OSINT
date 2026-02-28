@@ -1,55 +1,48 @@
-# 👁 NexusEye OSINT Bot
+# 👁 NexusEye OSINT & Anti-Fraud Bot v2.0
 
-A high-performance, asynchronous Telegram bot designed for comprehensive OSINT (Open Source Intelligence) investigations. This tool integrates nickname scanning, email leak detection, phone number analysis, and reverse image searching into a single, user-friendly interface.
+A professional-grade, asynchronous OSINT (Open Source Intelligence) tool for Telegram. Beyond standard searching, v2.0 introduces AI-driven personality profiling and advanced fraud detection for the CIS region (RK/RF).
 
 
 
-## 🚀 Key Features
+## 🌟 New in v2.0
+* **🛡 Smart Anti-Fraud:** Real-time detection of virtual/VOIP numbers often used by scammers.
+* **📦 Marketplace OSINT:** Deep-link searching for OLX and Avito seller history.
+* **🚘 Vehicle Insights:** License plate lookup with history and photo database integration.
+* **🧠 AI Personality Profiler:** Automated analysis of digital footprints using Gemini AI (Optional).
 
-* **🔍 Nickname Search:** Scans 25+ major social media platforms and forums (Instagram, TikTok, GitHub, VK, etc.) to find digital footprints.
-* **📧 Email Leak Check:** Integrates with leak database APIs to verify if a specific email has been compromised in known data breaches.
-* **📱 Phone Lookup:** Instant analysis of international phone numbers, providing region, carrier details, and direct links to WhatsApp/Telegram profiles.
-* **🖼 Reverse Image Search:** Generates deep links for facial and object recognition through Google Lens, Yandex Images, and Bing Visual Search.
-* **📄 PDF Reports:** Automatically generates and delivers professional PDF dossiers containing all investigation results.
-* **💳 Monetization Ready:** Built-in support for digital goods and services using **Telegram Stars (XTR)**.
+## 🚀 Core Functionalities
+* **🔍 Nickname Scanner:** 25+ social platforms (Instagram, TikTok, GitHub, etc.).
+* **📧 Breach Detector:** Email lookup in known data leak databases.
+* **📱 Phone Intelligence:** Carrier/region identification and direct messenger links.
+* **🖼 Visual Search:** Multi-engine reverse image search (Google, Yandex, Bing).
+* **📄 PDF Dossier:** Instant generation of comprehensive investigation reports.
 
 ## 🛠 Tech Stack
-
 * **Language:** Python 3.12+
-* **Framework:** `aiogram 3.x` (Fully Asynchronous)
-* **Database:** `SQLite3` (User profiles, search history, and premium status)
-* **Core Libraries:**
-    * `aiohttp` — For high-speed concurrent network requests.
-    * `fpdf2` — For dynamic PDF report generation.
-    * `phonenumbers` — For international phone metadata parsing.
+* **Framework:** `aiogram 3.x`
+* **AI Integration:** `Google Generative AI`
+* **Utilities:** `fpdf2`, `phonenumbers`, `aiohttp`, `BeautifulSoup4`
 
-## 📦 Installation & Setup
+## ⚙️ Installation
+1. `git clone https://github.com/your-username/NexusEye-OSINT.git`
+2. `pip install -r requirements.txt`
+3. Configure your `.env` with `BOT_TOKEN` and `ADMIN_ID`.
+4. `python main.py`
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/NexusEye-OSINT.git](https://github.com/your-username/NexusEye-OSINT.git)
-Set up a virtual environment and install dependencies:
-
-Bash
-
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-Configure your Bot Token in main.py.
-
-Launch the system:
+## 📊 Business Features
+* **Telegram Stars (XTR):** Native monetization for Premium features.
+* **Admin Panel:** Real-time stats on users, requests, and revenue.
+4. Загрузка на GitHub (Команды)
+Если ты уже создавал репозиторий, выполни эти команды в папке проекта:
 
 Bash
 
-python main.py
-📊 Admin Dashboard
-The bot includes a built-in monitoring system for the owner to track:
+git add .
+git commit -m "Upgrade to v2.0: Added AI analysis, Vehicle OSINT, and Anti-Fraud"
+git push origin main
+Что ты получил в итоге:
+Чистый код: Без секретных ключей в публичном доступе.
 
-Total active user base.
+Профессиональное описание: На английском, с четким выделением технологий.
 
-Real-time search request volume.
-
-Premium sales statistics and revenue in Telegram Stars.
-
-⚖️ Legal Disclaimer
-This tool is developed for educational and professional OSINT research purposes only. The author is not responsible for any misuse of the information retrieved by this bot.
+Портфолио: Теперь это не "учебный проект", а продукт, который можно показать заказчику или работодателю.
