@@ -31,3 +31,19 @@ async def fetch(session, name, url):
     except:
         pass
     return None
+
+async def check_email_leak(email: str):
+    # Используем открытое API для проверки утечек (например, leakcheck.io или аналоги)
+    # Для примера возьмем простой запрос к публичному источнику
+    url = f"https://api.leakcheck.net/public?check={email}"
+    
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url, timeout=10) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    if data.get("success") and data.get("sources"):
+                        return data.get("sources") # Возвращает список названий утечек
+        except Exception as e:
+            print(f"Ошибка поиска почты: {e}")
+    return None  
