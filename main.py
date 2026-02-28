@@ -4,22 +4,25 @@ import os
 from aiogram import Bot, Dispatcher
 from dotenv import load_dotenv
 from bot.handlers import router
+from core.db import init_db  # Импортируем нашу БД
 
 # Загружаем переменные из .env
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
 async def main():
-    # Настраиваем логирование, чтобы видеть ошибки в консоли
+    # Настраиваем логирование
     logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("nexus_eye.log"), # Сохраняет всё в файл
-        logging.StreamHandler()              # Выводит в консоль
-    ]
-)
+        level=logging.INFO,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        handlers=[
+            logging.FileHandler("nexus_eye.log"),
+            logging.StreamHandler()
+        ]
+    )
     
+    # 1. Сначала создаем базу данных (если её еще нет)
+    init_db()
     
     if not TOKEN:
         exit("Error: BOT_TOKEN not found in .env file")
@@ -27,10 +30,12 @@ async def main():
     bot = Bot(token=TOKEN)
     dp = Dispatcher()
     
-    # Подключаем наши обработчики команд
+    # 2. Подключаем обработчики команд
     dp.include_router(router)
 
     print("👁 NexusEye OSINT System Online")
+    
+    # 3. Запускаем опрос сервера
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
