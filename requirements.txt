@@ -4,3 +4,5 @@ python-dotenv==1.0.1
 pydantic==2.6.1
 beautifulsoup4==4.12.3
 requests==2.31.0
+phonenumbers==9.0.25
+fpdf2==2.7.8
