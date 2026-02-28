@@ -43,6 +43,26 @@ git push origin main
 Что ты получил в итоге:
 Чистый код: Без секретных ключей в публичном доступе.
 
+## ☕ Support NexusEye OSINT Project
+
+If NexusEye OSINT Bot is valuable to you, consider supporting its development.
+Your contribution helps keep the project alive and allows for continuous improvements and new features. Thank you!
+
+### Ways to support:
+
+* **🚀 Boosty.to:** For Russian-speaking audience and direct card payments.
+    [Support on Boosty](https://boosty.to/artem7sk)
+
+* **🔔 DonationAlerts:** Send a direct donation with a message!
+    [Donate via DonationAlerts](https://www.donationalerts.com/r/moydomsnylia)
+
+* **💰 Cryptocurrency:** For secure and anonymous support.
+    * **USDT (TRC20):** `TAfYV3aPL5T1XLS2By719UCCWKiuuAENGi`
+* **Bitcoin (BTC):** `15VyxQz7zKDTnDsJCZJAjX1eA4LHD5a14j`
+* **Ethereum / USDT (ERC20):** `0x027a11eb651bf737e93e0828f74203629efe386a`
+* **BNB (BEP20):** `0x027a11eb651bf737e93e0828f74203629efe386a`
+    * *Need another crypto? Contact me: [Telegram @Artem7sk_support](https://t.me/@moydomsnylia1)*
+    * 
 Профессиональное описание: На английском, с четким выделением технологий.
 
 Портфолио: Теперь это не "учебный проект", а продукт, который можно показать заказчику или работодателю.
